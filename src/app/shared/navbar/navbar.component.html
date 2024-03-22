@@ -1,0 +1,63 @@
+<header
+  class="header-area wow fadeInDown animated"
+  animateOnScroll
+  animationName="fadeInDown"
+  style="animation-delay: 0.2s"
+>
+  <div
+    class="classy-nav-container breakpoint-off dark left"
+    (window:resize)="onResize($event)"
+  >
+    <div class="container">
+      <!-- Classy Menu -->
+      <nav class="classy-navbar justify-content-between" id="dreamNav">
+        <!-- Logo -->
+        <a class="nav-brand" href="/index"
+          ><img src="assets/img/logo.png" alt="logo" />
+        </a>
+
+        <!-- Navbar Toggler -->
+        <div class="classy-navbar-toggler" (click)="sidebarToggle()">
+          <span class="navbarToggler"
+            ><span></span><span></span><span></span
+          ></span>
+        </div>
+
+        <!-- Menu -->
+        <div class="classy-menu">
+          <!-- close btn -->
+          <div class="classycloseIcon" (click)="sidebarToggle()">
+            <div class="cross-wrap">
+              <span class="top"></span><span class="bottom"></span>
+            </div>
+          </div>
+
+          <!-- Nav Start -->
+          <div class="classynav">
+            <ul id="nav">
+              <li class="active">
+                <a href="#home">Home</a>
+              </li>
+              <li class="">
+                <a href="#about">About</a>
+              </li>
+              <li class="">
+                <a href="#services">Services</a>
+              </li>
+              <li>
+                <a href="#capabilities">Capabilities</a>
+              </li>
+              <li>
+                <a href="#team">Team</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Nav End -->
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>

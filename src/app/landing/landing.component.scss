@@ -1,0 +1,42 @@
+.welcome-content {
+  position: relative;
+  z-index: 1;
+  margin-top: 90px;
+
+  p {
+    font-size: 18px;
+  }
+
+  .appear-animation {
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    &.bounceIn {
+      animation-name: bounceIn;
+      &.appear-animation-visible {
+        opacity: 1;
+        vertical-align: middle;
+
+        .word-rotate {
+          display: inline-block;
+          overflow: hidden;
+          text-align: center;
+          position: relative;
+
+          &.active {
+            visibility: visible;
+          }
+
+          .word-rotate-items {
+            position: relative;
+            width: 100%;
+          }
+
+          span {
+            display: block;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
