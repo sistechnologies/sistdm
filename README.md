@@ -1,4 +1,6 @@
-# Terminal Commands
+# sistdm
+
+## Getting starter
 
 1. Install NodeJS v14.x
 2. Open Terminal
