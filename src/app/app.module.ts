@@ -35,12 +35,12 @@ import { RECAPTCHA_SETTINGS,  RecaptchaSettings, RecaptchaModule, RecaptchaForms
         RecaptchaModule,
         RecaptchaFormsModule,
         AppRoutingModule,
-        AnimateOnScrollModule.forRoot()        
+        AnimateOnScrollModule.forRoot()
     ],
     providers: [
         {
             provide: RECAPTCHA_SETTINGS,
-            useValue:{siteKey:"6Lcy_RQUAAAAAOYMvinoTKh3aJgJXyGnJgL1G8VY"} as RecaptchaSettings
+            useValue: {siteKey: '6Lcy_RQUAAAAAOYMvinoTKh3aJgJXyGnJgL1G8VY'} as RecaptchaSettings
         }
     ],
     bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from "@angular/forms";
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 
 @Component({
@@ -7,7 +7,7 @@ import { FormGroup, FormBuilder, Validators } from "@angular/forms";
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
-  
+
 export class FooterComponent implements OnInit {
 
   contactForm: FormGroup;
@@ -21,14 +21,14 @@ export class FooterComponent implements OnInit {
       subject: ['', [Validators.required]],
       message: ['', [Validators.required]],
       recaptchaReactive: [null, [Validators.required]]
-    })  
+    })
   }
 
-  get getControl(){
+  get getControl() {
     return this.contactForm.controls;
   }
 
-  onSubmit(){
+  onSubmit() {
     console.log(this.contactForm);
   }
 

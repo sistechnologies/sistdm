@@ -5,9 +5,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { LandingComponent } from './landing/landing.component';
 
-const routes: Routes =[
+const routes: Routes = [
     { path: '', redirectTo: 'index', pathMatch: 'full' },
-    { path: 'index',     component: LandingComponent },    
+    { path: 'index',     component: LandingComponent },
 ];
 
 @NgModule({

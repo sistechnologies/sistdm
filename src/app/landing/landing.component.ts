@@ -1,5 +1,4 @@
-import { Component, NgModule, OnInit } from '@angular/core';
-import { FooterComponent } from '../footer/footer.component';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-landing',
@@ -8,21 +7,21 @@ import { FooterComponent } from '../footer/footer.component';
 })
 
 export class LandingComponent implements OnInit {
-  
 
     constructor( ) { }
 
   ngOnInit() {
- 
-    var body = document.getElementsByTagName('body')[0];
+
+    const body = document.getElementsByTagName('body')[0];
     body.classList.add('landing-page');
-    var navbar = document.getElementsByTagName('nav')[0];
+    const navbar = document.getElementsByTagName('nav')[0];
     navbar.classList.add('sticky');
   }
-  ngOnDestroy(){
-    var body = document.getElementsByTagName('body')[0];
+  // tslint:disable-next-line:use-life-cycle-interface
+  ngOnDestroy() {
+    const body = document.getElementsByTagName('body')[0];
     body.classList.remove('landing-page');
-    var navbar = document.getElementsByTagName('nav')[0];
+    const navbar = document.getElementsByTagName('nav')[0];
     navbar.classList.remove('sticky');
   }
 
